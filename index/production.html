@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Производство</title>
+    <link rel="stylesheet" href="/сайт/style/production.css">
+    <link rel="shortcut icon" href="/сайт/img/topPnoto.png"/>
+</head>
+<body>
+    <header>
+        <div class="header__info">
+            <div class="telephone">
+                <div class="telephoneImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+                        <defs>
+                          <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 287 286">
+                            <image width="287" height="286" xlink:href="data:image/png;base64,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"/>
+                          </pattern>
+                        </defs>
+                        <rect id="Иконка_телефона" data-name="Иконка телефона" width="27" height="27" fill="url(#pattern)"/>
+                      </svg>
+                </div>
+                <div class="block__telephone">
+                    <a href="tel:+7(4832)62-04-04">
+                        <div class="tel">+7(4832)62-04-04</div>
+                    </a>
+                    <a href="tel:+7 800 234-78-84">
+                        <div class="tel">+7 800 234-78-84</div>
+                    </a>
+            </div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/сайт/img/logoWhite.png" alt="">
+                </a>
+                </div>
+            <div class="email">
+                <div class="emailImg">
+                    <img src="/сайт/img/email.png" alt="">   
+                </div>
+                <a href="mailto:info@luxoil32.ru">
+                <div class="mail">info@luxoil32.ru</div>
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainMenu">
+            <a href="index.html" class="mainPageA">
+            <div class="mainPage menu">Главная</div>
+        </a>
+        <a href="https://shop.luxoil32.ru/">
+            <div class="shopPage menu">Магазин</div>
+        </a>
+            <div class="servicesPage menu dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Услуги
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="services/designing.html">Проектирование</a>
+                <a class="dropdown-item" href="#">Строительство</a>
+                <a class="dropdown-item" href="services/equipmentRental.html">Аренда техники</a>
+                <a class="dropdown-item maintenanceOfPetroleumProductsFacilities" href="#">Обслуживание<br>объектов<br>нефтепродуктов:<br>техническая<br>диагностика,<br>сервисный центр</a>
+              </div>
+            </div>
+        <a href="#">
+            <div class="productionPage menu">Производство</div>
+        </a>
+        <a href="#">
+            <div class="contactsPage menu">Контакты</div>
+    </a>
+</div>
+
+<div class="TopText">Производство</div>  
+
+<div class="stationaryGasStation products">
+    <h3>1. Стационарная АЗС</h3>
+    <div class="text">Полностью подходит для коммерческого использования. Размеры, количество ТРК, установка мини-маркета зависит только от желания заказчика.</div>
+
+    <div class="PhotoAZSRoot">
+        <div class="photoAZS photoAZS1">
+            <img src="/сайт/img/production/stationaryGasStation/KmsX3n8A6Co.jpg" alt="">
+        </div>
+        <div class="photoAZS photoAZS2">
+            <img src="/сайт/img/production/stationaryGasStation/gftREjMTdsk.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="CommercialModularGasStation products">
+    <h3>2. Коммерческая модульная АЗС</h3>
+    <div class="text">
+        Модульная автозаправочная станция (МАЗС) – это передвижной наземный автозаправочный комплекс, позволяющий эффективно и быстро заправлять транспортные средства.
+        При заказе наша компания предоставляет заказчику наиболее выгодные условия оплаты и скидки на приобретение модульных автозаправочных станций, а также осуществляет доставку модульных АЗС до согласованного с заказчиком пункта выгрузки. Благодаря этим условиям вы можете ощутить удобство работы с нами.
+        Наши МАЗС снабжены автоматическими системами отпуска топлива, которые позволят вам вести электронный учет по выдачи топлива для каждого пользователя АЗС, благодаря которому вы легко сможете определить нецелевое использование каждой выданной дозы ГСМ.</div>
+    <div class="photoMAZS">
+        <div>
+            <img src="/сайт/img/production/CommercialModularGasStation/I2xHFhNcMQI.jpg" alt="">
+        </div>
+        <div>
+            <img src="/сайт/img/production/CommercialModularGasStation/r7dB8QELdfQ.jpg" alt="">
+        </div>
+        <div>
+            <img src="/сайт/img/production/CommercialModularGasStation/8wq_gwKAts0.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="DepartmentalContainerFillingStation products">
+    <h3>3.Ведомственная контейнерная АЗС</h3>
+    <div class="text">Контейнерная АЗС (КАЗС) – это комплексное устройство, состоящее из резервуара-хранилища и бензораздаточной колонки, которые позволяют соорудить мобильную автозаправку в любом удобном месте, где существует такая необходимость.
+        КАЗС является автономным резервуаром для сохранности нефтепродуктов и ГСМ. Он изготовлен как стандартная емкость и удобен при перевозке. В комплект КАЗС входит топливораздаточная колонка.</div>
+    <div class="photoKAZS">
+        <img src="/сайт/img/production/DepartmentalContainerFillingStation/XkmT20XebS0.jpg" alt="">
+    </div>
+</div>
+
+<div class="BlockGasStation products">
+    <h3>4.Блочная АЗС</h3>
+    <div class="text">
+        Блочные АЗС - также распространенные пункты раздачи горючего для всевозможного транспорта. Их главной конструктивной особенностью является размещение резервуара для нефтепродуктов непосредственно под заправочным пунктом.
+Данное расположение способствует экономии площади в случае ее нехватки. Строительство подобных автозаправочных станций происходит в следующем порядке:
+<ul>
+    <li>откопка котлована определенного размера под топливозаправочным пунктом;</li>
+    <li>отсыпка дна котлована песчано-гравийной смесью;</li>
+    <li>устройство прочного и надежного фундамента под контейнеры с топливом;</li>
+    <li>монтаж топливных резервуаров. Их крепление может осуществляться анкерными болтами, хомутами либо приваркой<br>ложементов к закладным деталям фундамента;</li>
+    <li>монтаж технологических шахт и отсеков;</li>
+    <li>обратная засыпка котлована;</li>
+    <li>устройство навеса (при необходимости);</li>
+    <li>установка топливораздаточных колонок (ТРК);</li>
+    <li>обустройство территории.</li>
+</ul>
+Экономия места и высокая надежность - основные выгоды от строительства блочных АЗС. В тоже время главным недостатком по сравнению контейнерными(КАЗС) и модульными заправочными станциями, это отсутствие мобильности.
+    </div>
+</div>
+
+<div class="FuelStorageAndDeliveryTanks products">
+    <h3>5. Резервуары для хранения и выдачи топлива</h3>
+    <div class="photoRezervuar">
+        <div>
+            <img src="/сайт/img/production/FuelStorageAndDeliveryTanks/2a6R2i0NSkc.jpg" alt="">
+        </div>
+        <div>
+            <img src="/сайт/img/production/FuelStorageAndDeliveryTanks/Lu9iEwPa1vs.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="DesignAndConstructionOfStellas products">
+    <h3>6. Проектирование и строительство стелл</h3>
+    <div class="photoStell">
+        <div>
+            <img src="/сайт/img/production/DesignAndConstructionOfStellas/CqKCW-m9c68.jpg" alt="">
+        </div>
+        <div>
+            <img src="/сайт/img/production/DesignAndConstructionOfStellas/E63VNr4BKC4.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="DesignAndConstructionOfMinimarketsAndStores products">
+    <h3>7.Проектирование и строительство мини-маркетов и магазинов</h3>
+    <div class="photoMiniMarkets">
+        <div>
+            <img src="/сайт/img/production/DesignAndConstructionOfMinimarketsAndStores/Pi5E2yUXDK4.jpg" alt="">
+        </div>
+        <div>
+            <img src="/сайт/img/production/DesignAndConstructionOfMinimarketsAndStores/vSAByI5gzbY.jpg" alt="">
+        </div>
+    </div>
+</div>
+    </main>
+    <footer>
+    <div class="footerMainMenu">
+        <a href="index.html" class="mainPageBottom">
+            <div>Главная</div>
+        </a>
+        
+        <a href="https://shop.luxoil32.ru/">
+            <div>Магазин</div>
+        </a>
+
+        <a href="index/production.html">
+            <div>Производство</div>
+        </a>
+        
+        <a href="">
+            <div>Галерея работ</div>
+        </a>
+        
+        <a href="">
+            <div>Сертификаты</div>
+        </a>
+        
+        <a href="">
+            <div class="contact">Контакты</div>
+        </a>
+    </div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

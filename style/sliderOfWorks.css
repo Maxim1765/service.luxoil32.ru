@@ -1,0 +1,33 @@
+* {
+  font-family: doloman pavljenko light;
+}
+
+.carousel {
+    margin-bottom: 0;
+  }
+   
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height: 100vh!important;
+    margin: 0 auto;
+  }
+
+  .container-fluid {
+    padding: 0;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+  .closeSlider {
+    margin: 0 0 0 97vw;
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    padding: 5px 5px 0 0;
+  }
+
+  .closeSlider div img {
+    width: 50px;
+  }

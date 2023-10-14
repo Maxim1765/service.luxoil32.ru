@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/topPnoto.png"/>
+</head>
+<body>
+    <div class="rootBoxScroll">
+      <div class="preload__scene" id="hideMe">
+        <div class="loading__block">
+            <div class="title">
+                <div class="pageLoading">
+                    <img src="img/logoWhite.png" alt="">
+                </div>
+            </div>
+            <div class="progress"></div>
+        </div>
+        <div class="preloader__block"></div>
+        <div class="preloader__block"></div>
+    </div>
+    <!-- основной сайт -->
+    <!-- шапка сайта -->
+    <header>
+        <div class="header__info">
+            <div class="telephone">
+                <div class="telephoneImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+                        <defs>
+                          <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 287 286">
+                            <image width="287" height="286" xlink:href="data:image/png;base64,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"/>
+                          </pattern>
+                        </defs>
+                        <rect id="Иконка_телефона" data-name="Иконка телефона" width="27" height="27" fill="url(#pattern)"/>
+                      </svg>
+                </div>
+                <div class="block__telephone">
+                    <a href="tel:+7(4832)62-04-04">
+                        <div class="tel">+7(4832)62-04-04</div>
+                    </a>
+                    <a href="tel:+7 800 234-78-84">
+                        <div class="tel">+7 800 234-78-84</div>
+                    </a>
+            </div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logoWhite.png" alt="">
+                </a>
+                </div>
+            <div class="email">
+                <div class="emailImg">
+                    <img src="img/email.png" alt="">   
+                    <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO3WvUrDUBjG8VRdWhQdsuqgoIji0htwE0HEQe+k4Oro6i0ITuIiDjrprIMIOigInYogflxBf1I8SiytTTCNSx84BM77PvmH5z0kiaKB8hCqRa3Ip+p47OOqtyBfsLjP6cVJWK3PsFoS1sABKjlDKuG+jSRsFqe4wUxOoClc4RzzP2aGErbxho0/glbxgl0Mt8/s+4BgDa+hcSgjpBQe+B2bif3OsFBsxXqLE0ykBI3hCPdYaKt1h4WGURziAYs9QHO4wzHGO9R/h3WIZatLz3qYc9fYU8ESzct4wh5Gwl5r8Dt4xkoPf3pYMEziEhfhKJ/hGtMpvNlgwVTGPprhWk7pyw5LmJcy9sf/9iKOB7A8YqwX9aWuFvYPMlCUgz4AeaNi4GYgKd8AAAAASUVORK5CYII="> -->
+                </div>
+                <a href="mailto:info@luxoil32.ru">
+                <div class="mail">info@luxoil32.ru</div>
+            </a>
+            </div>
+        </div>
+    </header>
+    <!-- основная часть сайта -->
+    <main>
+        <div class="mainMenu">
+            <a href="index.html" class="mainPageA">
+            <div class="mainPage menu">Главная</div>
+        </a>
+        <a href="https://shop.luxoil32.ru/">
+            <div class="shopPage menu">Магазин</div>
+        </a>
+            <div class="servicesPage menu dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Услуги
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="index/services/designing.html">Проектирование</a>
+                <a class="dropdown-item" href="index/services/construction.html">Строительство</a>
+                <a class="dropdown-item" href="index/services/equipmentRental.html">Аренда техники</a>
+                <a class="dropdown-item maintenanceOfPetroleumProductsFacilities" href="index/services/maintenanceOfPetroleumProductsFacilities.html">Обслуживание<br>объектов<br>нефтепродуктов:<br>техническая<br>диагностика,<br>сервисный центр</a>
+                <a class="dropdown-item maintenanceOfPetroleumProductsFacilities" href="index/services/otherServices.html">Прочие услуги</a>
+              </div>
+            </div>
+        <a href="index/production.html">
+            <div class="productionPage menu">Производство</div>
+        </a>
+        <a href="index/contacts.html">
+            <div class="contactsPage menu">Контакты</div>
+    </a>
+</div>
+
+<!-- тут начинается слайдер -->
+<div class="mainDivSlider">
+<div id="carouselExampleIndicators" class="carousel slide elewey" data-ride="carousel" style="height: 594px;">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="height: 594px;">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/sliderCerticates/slide3.jpeg" alt="Первый слайд" style="height: 594px;">
+        <div class="carousel-caption d-none d-md-block rootTextBox">
+          <div>
+            <div class="slideTopText">Сервисный центр</div>
+          </div>
+          <div>
+            <div class="slideBottomText">Квалифицированные специалисты выполнят качественно работы<br>как на территории заказчика, так и на собственной территории.</div>
+          </div>
+            <a href="/сайт/index/services/maintenanceOfPetroleumProductsFacilities.html">
+                <div class="moreDetailed">Подробнее</div>
+            </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/sliderCerticates/slide1.png" alt="Второй слайд" style="height: 594px;">
+        <div class="carousel-caption d-none d-md-block rootTextBox">
+          <div>
+            <div class="slideTopText">Строительство АЗС и нефтебаз</div>
+          </div>
+          <div>
+            <div class="slideBottomText">Строительство, доставка и подключение АЗС. Реконструкция и ремонт</div>
+          </div>
+            <a href="/сайт/index/services/construction.html">
+                <div class="moreDetailed">Подробнее</div>
+            </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/sliderCerticates/slide2.png" alt="Третий слайд" style="height: 594px;">
+        <div class="carousel-caption d-none d-md-block rootTextBox">
+          <div>
+            <div class="slideTopText">Проектирование АЗС и нефтебаз</div>
+          </div>
+          <div>
+            <div class="slideBottomText">Качественная разработка проектной документации в срок<br>для специализированных предприятий</div>
+          </div>
+            <a href="/сайт/index/services/designing.html">
+                <div class="moreDetailed">Подробнее</div>
+            </a>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  <!-- тут заканчивается слайдер -->
+
+  <div class="whyChooseUs w-100">
+    <div class="seoHeader">
+        <h1>ПРОЕКТИРОВАНИЕ, СТРОИТЕЛЬСТВО, РЕМОНТ И ОБСЛУЖИВАНИЕ<br>
+            АЗС, АГЗС, ГНС, АГНКС И НЕФТЕБАЗ</h1>
+    </div>
+    <div class="pass"></div>
+
+    <div class="textTitle">
+        <h2>ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+    </div>
+
+      <div class="textWhyChooseUs">
+          В настоящее время ООО «ЛюксОйл-СервисБрянск» - это несколько видов деятельности,<br>направленных на создание полного комплекса услуг в сфере сервисного обслуживания<br>автозаправочных станций, строительства и реконструкции АЗС, продаж оборудования для АЗС и<br>нефтебаз. Благодаря такой структуре организации, Вы имеете возможность обратиться в нашу<br>Компанию не только за отдельными видами работ, но и как к единому подрядчику на<br>проектирование, строительство А3С или реконструкцию АЗС и нефтебаз.
+      </div>
+  </div>
+
+  <div class="cooperationWithUsAllows">
+    <div>
+        <img src="img/whyChooseUsPhotos/TRK.jpg" alt="">
+    </div>
+    <div>
+        <img src="img/whyChooseUsPhotos/pistoletPochtovau.jpg" alt="">
+    </div>
+    <div>
+        <img src="img/whyChooseUsPhotos/putevka.jpg" alt="">
+    </div>
+  </div>
+  <div class="cooperationWithUsAllowsText">СОТРУДНИЧЕСТВО С НАМИ ПОЗВОЛЯЕТ:</div>
+
+  <div class="cooperationWithUsAllowsMainText w-100">
+    <div>
+    <ul>
+    <li>выполнять качественное строительство «под ключ» и обслуживание АЗС с учетом современных требований;</li>
+    <li>наладить автоматизированный учет нефтепродуктов и уменьшить потери в их количественном и<br>качественном отношениях;</li>
+    <li>увеличить срок эксплуатации АЗС за счет своевременного качественного сервисного обслуживания;</li>
+    <li>уменьшить простои оборудования и АЗС в целом за счет оперативного реагирования на заявки клиентов;</li>
+    <li>исключить или оптимизировать затраты на содержание собственной сервисной службы;</li>
+    <li>свести к минимуму количество вредных выбросов в окружающую среду. </li>
+</ul>
+</div>
+  </div>
+    </main>
+
+    <footer>
+        <div class="theyTrustUs">
+            <span>НАМ ДОВЕРЯЮТ:</span>
+        </div>
+
+        <div class="theyTrustUsPhoto">
+            <img src="img/theyTrustUs/transneft.png" alt="">
+            <img src="img/theyTrustUs/rosneft.jpg" alt="">
+            <img src="img/theyTrustUs/lukoil.jpg" alt="">
+            <img src="img/theyTrustUs/miratorg.jpg" alt="">
+            <img src="img/theyTrustUs/gasprom.jpg" alt="">
+            <img src="img/theyTrustUs/bashneft.jpg" alt="">
+        </div>
+
+        <div class="footerMainMenu">
+            <a href="index.html" class="mainPageBottom">
+                <div>Главная</div>
+            </a>
+            
+            <a href="https://shop.luxoil32.ru/">
+                <div>Магазин</div>
+            </a>
+
+            <a href="index/production.html">
+                <div>Производство</div>
+            </a>
+            
+            <a href="index/galleryOfWorks.html">
+                <div>Галерея работ</div>
+            </a>
+            
+            <a href="index/certificates.html">
+                <div>Сертификаты</div>
+            </a>
+            
+            <a href="index/contacts.html">
+                <div class="contact">Контакты</div>
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

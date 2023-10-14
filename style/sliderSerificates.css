@@ -1,0 +1,9 @@
+.carousel {
+    margin-bottom: 0;
+  }
+   
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height: 100vh!important;
+    margin: 0 auto;
+  }

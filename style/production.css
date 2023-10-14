@@ -1,0 +1,348 @@
+* {
+    font-family: doloman pavljenko light;
+}
+
+header {
+    max-width: 1920px;
+    margin: 0 auto;
+    z-index: 1002;
+}
+
+.header__info {
+    background-color: red;
+}
+
+.telephone {
+    display: inline-block;
+}
+
+.telephoneImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block__telephone {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block__telephone a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a img {
+    max-width: 536px;
+    width: 28vw;
+    min-width: 250px;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 11px;
+}
+
+.email {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emailImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emailImg img {
+    width: 27px;
+}
+
+.mail {
+    display: inline-block;
+}
+
+.tel {
+    font-size: 22px;
+}
+
+.mail {
+    color: #fff;
+    font-size: 24px
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu {
+    font-size: 27px;
+    color: red;
+    display: inline-block;
+    height: 142px;
+    line-height: 142px;
+}
+
+.mainMenu a {
+    text-decoration: none;
+}
+
+.mainMenu {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.servicesPage span svg{
+    background-color: red;
+}
+
+.servicesPage a {
+    font-size: 27px;
+    background-color: #fff;
+    color: red;
+    border: none;
+}
+
+.dropdown-menu a:nth-child(1) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(2) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(3) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(4) {
+    line-height: 27px;
+}
+
+.TopText {
+    max-width: 1920px;
+    font-size: 41px;
+    width: 85%;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+.products {
+    max-width: 1920px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.products h3 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 30px;
+}
+
+/* .photoAZS img {
+    height: 512px;
+} */
+
+.PhotoAZSRoot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 46px;
+    margin-bottom: 87px;
+}
+
+.photoAZS1 img {
+    max-width: 912px;
+    width: 47vw;
+}
+
+.photoAZS2 img {
+    max-width: 682px;
+    width: 35vw;
+}
+
+.photoAZS {
+    margin-top: 46px;
+    display: inline-block;
+    margin-bottom: 87px;
+}
+
+/* MAZS  */
+
+.photoMAZS div{
+    display: inline-block;
+}
+
+.photoMAZS {
+    margin-top: 46px;
+    margin-bottom: 46px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photoMAZS div:nth-child(1) img {
+    max-width: 655px;
+    width: 34vw;
+}
+
+.photoMAZS div:nth-child(2) img {
+    max-height: 434px;
+    max-width: 287px;
+    width: 15vw;
+}
+
+.photoMAZS div:nth-child(3) img {
+    max-width: 633px;
+    width: 33vw;
+}
+
+/* KAZS */
+
+.photoKAZS {
+    margin-top: 46px;
+}
+
+.photoKAZS img{
+    max-width: 682px;
+    width: 35vw;
+}
+
+/* rezervuars */
+
+.photoRezervuar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 46px;
+}
+.photoRezervuar div {
+    display: inline-block;
+}
+
+.photoRezervuar div:nth-child(1) img {
+    max-width: 795px;
+    width: 41vw;
+}
+
+.photoRezervuar div:nth-child(2) img {
+    max-width: 803px;
+    width: 42vw;
+}
+
+.FuelStorageAndDeliveryTanks {
+    margin-top: 87px;
+    margin-bottom: 87px;
+}
+
+/* STELLS */
+
+.photoStell div{
+    display: inline-block;
+}
+
+.photoStell {
+    margin-bottom: 87px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.photoStell div:nth-child(1) img {
+    max-width: 510px;
+    width: 26vw;
+}
+
+.photoStell div:nth-child(2) img {
+    max-width: 1063px;
+    width: 55vw;
+}
+
+/* MINIMARKETS */
+
+.photoMiniMarkets div{
+    display: inline-block;
+}
+
+.photoMiniMarkets {
+    margin-bottom: 125px;
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photoMiniMarkets div:nth-child(1) img {
+    max-width: 815px;
+    width: 42vw;
+}
+
+.photoMiniMarkets div:nth-child(2) img {
+    max-width: 791px;
+    width: 41vw;
+}
+
+.footerMainMenu a div {
+    display: inline-block;
+    font-size: 27px;
+    height: 110px;
+    line-height: 110px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footerMainMenu {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+/* .footerMainMenu a div:nth-child(7) {
+    margin-right: 140px;
+} */
+
+.servicesPage a {
+    font-size: 27px;
+    background-color: #fff;
+    color: red;
+    border: none;
+}
+
+.dropdown-menu a:nth-child(1) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(2) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(3) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(4) {
+    line-height: 27px;
+}

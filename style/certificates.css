@@ -1,0 +1,234 @@
+* {
+    font-family: doloman pavljenko light;
+}
+
+header {
+    z-index: 1002;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header__info {
+    background-color: red;
+}
+
+.telephone {
+    display: inline-block;
+}
+
+.telephoneImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block__telephone {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block__telephone a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a img {
+    max-width: 536px;
+    width: 28vw;
+    min-width: 250px;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 11px;
+}
+
+.email {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emailImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emailImg img {
+    width: 27px;
+}
+
+.mail {
+    display: inline-block;
+}
+
+.tel {
+    font-size: 22px;
+}
+
+.mail {
+    color: #fff;
+    font-size: 24px
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu {
+    font-size: 27px;
+    color: red;
+    display: inline-block;
+    height: 142px;
+    line-height: 142px;
+}
+
+.mainMenu a {
+    text-decoration: none;
+}
+
+.mainMenu {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.servicesPage span svg{
+    background-color: red;
+}
+
+.servicesPage a {
+    font-size: 27px;
+    background-color: #fff;
+    color: red;
+    border: none;
+}
+
+.dropdown-menu a:nth-child(1) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(2) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(3) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(4) {
+    line-height: 27px;
+}
+
+.footerMainMenu a div {
+    display: inline-block;
+    font-size: 27px;
+    height: 110px;
+    line-height: 110px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footerMainMenu {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+/* .footerMainMenu a div:nth-child(7) {
+    margin-right: 140px;
+} */
+
+.servicesPage a {
+    font-size: 27px;
+    background-color: #fff;
+    color: red;
+    border: none;
+}
+
+.dropdown-menu a:nth-child(1) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(2) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(3) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(4) {
+    line-height: 27px;
+}
+
+.TopText {
+    font-size: 41px;
+    width: 85%;
+    max-width: 1920px;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.certificate {
+    margin: 0 auto 182px auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.cert {
+    display: inline-block;
+
+}
+
+.certificate div img {
+    width: 340px;
+}
+
+.certificate div button {
+    border: 0;
+    text-decoration: none;
+}
+
+.carousel {
+    margin-bottom: 0;
+  }
+   
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height: 100vh!important; /* Задайте высоту слайдера в соответствии с вашими требованиями */
+    width: 100vw!important;
+    margin: 0 auto;
+  }
+
+  .item {
+    width: 100vw!important;
+    height: 960px;
+  }
+
+  .container-fluid {
+    padding: 0!important;
+    display: none;
+  }
+
+  .btn1::before:active {
+    z-index: 1003!important;
+    display: block;
+  }

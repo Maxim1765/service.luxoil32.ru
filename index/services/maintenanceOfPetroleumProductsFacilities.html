@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Производство</title>
+    <link rel="stylesheet" href="/service.luxoil32.ru/style/maintenanceOfPetroleumProductsFacilities.css">
+    <link rel="shortcut icon" href="/service.luxoil32.ru/img/topPnoto.png"/>
+</head>
+<body>
+    <header>
+        <div class="header__info">
+            <div class="telephone">
+                <div class="telephoneImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+                        <defs>
+                          <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 287 286">
+                            <image width="287" height="286" xlink:href="data:image/png;base64,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"/>
+                          </pattern>
+                        </defs>
+                        <rect id="Иконка_телефона" data-name="Иконка телефона" width="27" height="27" fill="url(#pattern)"/>
+                      </svg>
+                </div>
+                <div class="block__telephone">
+                    <a href="tel:+7(4832)62-04-04">
+                        <div class="tel">+7(4832)62-04-04</div>
+                    </a>
+                    <a href="tel:+7 800 234-78-84">
+                        <div class="tel">+7 800 234-78-84</div>
+                    </a>
+            </div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/service.luxoil32.ru/img/logoWhite.png" alt="">
+                </a>
+                </div>
+            <div class="email">
+                <div class="emailImg">
+                    <img src="/service.luxoil32.ru/img/email.png" alt="">   
+                </div>
+                <a href="mailto:info@luxoil32.ru">
+                <div class="mail">info@luxoil32.ru</div>
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainMenu">
+            <a href="index.html" class="mainPageA">
+            <div class="mainPage menu">Главная</div>
+        </a>
+        <a href="https://shop.luxoil32.ru/">
+            <div class="shopPage menu">Магазин</div>
+        </a>
+            <div class="servicesPage menu dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Услуги
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="services/designing.html">Проектирование</a>
+                <a class="dropdown-item" href="#">Строительство</a>
+                <a class="dropdown-item" href="services/equipmentRental.html">Аренда техники</a>
+                <a class="dropdown-item maintenanceOfPetroleumProductsFacilities" href="#">Обслуживание<br>объектов<br>нефтепродуктов:<br>техническая<br>диагностика,<br>сервисный центр</a>
+              </div>
+            </div>
+        <a href="#">
+            <div class="productionPage menu">Производство</div>
+        </a>
+        <a href="#">
+            <div class="contactsPage menu">Контакты</div>
+    </a>
+</div>
+
+<div class="TopText">ОБСЛУЖИВАНИЕ ОБЪЕКТОВ НЕФТЕПРОДУКТОВ: ТЕХНИЧЕСКАЯ<br>ДИАГНОСТИКА, СЕРВИСНЫЙ ЦЕНТР </div>  
+
+<div class="OsnTekst">
+    <div class="text">
+        <div>ООО «ЛюксОйл-СервисБрянск» выполняет полный спектр<br>работ по технической диагностике, ремонту резервуаров,<br>автоцистерн и трубопроводов.</div>
+        <div>В работах по технической диагностике мы используем<br>высокоточное поверенное оборудование. Наши специалисты<br>обладают высочайшей квалификацией и имеют большой<br>практический опыт. На все виды работ имеется аккредитация.<br> По результатам диагностики мы выдаем детальный протокол.
+        </div>
+    </div>
+    <div class="image">
+        <img src="/service.luxoil32.ru/img/KYzOiFrdbRA.jpg" alt="">
+    </div>
+</div>
+<div class="textAboutUs">
+    <div>
+        Мы готовы качественно и в срок выполнить работы по следующим объектам: <br>
+        <br>
+        <h3>1. Цистерны для перевозки опасных грузов:</h3>
+        <ul>
+            <li>Проверка клапанов (Дыхательных, предохранительных, отвода паров и комбинированных);</li>
+            <li>Проверка сопротивления электрической цепи цистерн и устройств для защиты от статического<br>
+                электричества;</li>
+            <li>Проверка цистерн (Промежуточная, периодическая, внеплановая, техническое диагностирование);</li>
+            <li>Ремонт цистерн и их оборудования (Исправление дефектов, дооборудование, модернизация);</li>
+            <li>Разработка эксплуатационных документов;</li>
+            <li>Снабжение необходимыми материалами и оборудованием;</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>2. Резервуары для хранения нефти, нефтепродуктов и химических реагентов:</h3>
+        
+        <ul>
+            <li>Проверка клапанов (Дыхательных и предохранительных);</li>
+            <li>Проверка резервуаров (Частичное или полное техническое диагностирование);</li>
+            <li>Разработка эксплуатационных документов;</li>
+            <li>Поверка (Объемным и геометрическими методами);</li>
+            <li>Ремонт (Исправление дефектов, дооборудование, нанесение защитных покрытий);</li>
+            <li>Разработка эксплуатационных документов;</li>
+            <li>Снабжение необходимыми материалами и оборудованием.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>3. Технологические трубопроводы:</h3>
+        <ul>
+            <li>Диагностика;</li>
+            <li>Ремонт;</li>
+            <li>Испытания на герметичность;</li>
+            <li>Обслуживание коммуникации и оборудования;</li>
+            <li>Ревизия;</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>4. Подготовка цистерн, резервуаров и трубопроводов к утилизации:</h3>
+
+        <ul>
+            <li>Демонтаж;</li>
+            <li>Резка технологических окон / резка объекта в целом на конечные элементы;</li> 
+        </ul>
+    </div>
+
+    <div>
+        <h3>5. Зачистка ёмкостей и резервуаров<br>
+            Выполняется следующий перечень работ по зачистке резервуаров:</h3>
+        <div>
+            <ul>
+                <li>Оформление допуска на проведение работ (повышенной опасности);</li>
+                <li>Ограждение места проведения работ;</li>
+                <li>Откачивание из емкости остатков нефтепродукта;</li>
+                <li>Отключение насосного оборудования;</li>
+                <li>Отключение трубопроводов от резервуара;</li>
+                <li>Демонтаж оборудования для резервуаров;</li>
+                <li>Демонтаж и подъем крышки емкости;</li>
+                <li>Удаление осадка от нефтепродукта с поверхности резервуара;</li>
+                <li>Зачистка внутренней поверхности емкости до необходимой чистоты (согласно ГОСТ 1510-84);</li>
+                <li>Монтаж крышки горловины емкости;</li>
+                <li>Монтаж оборудования для резервуаров;</li>
+                <li>Подключение трубопроводов к оборудованию резервуара;</li>
+                <li>Оформление документации на проведенную зачистку емкости.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <h3>Также мы проводим ряд дополнительных работ:</h3>
+        <div>
+            <ul>
+                <li>дегазация емкости;</li>
+                <li>удаление остатков топлива из трубопроводов;</li>
+            </ul>
+        </div>
+        <div>
+            <b>Дегазация резервуаров и емкостей - это неотъемлемая часть процедуры зачистки.</b> <br>
+
+            Она выполняется перед всеми операциями, ремонтными работами, ликвидацией донных отложений. Дегазация необходима для того, чтобы ликвидировать взрывоопасность. При зачистке емкости ее пропаривают паром, затем наполняют инертным газом. После этих процедур она обрабатывается особыми моющими средствами, которые разлагают углеводороды. 
+<br><br>
+Процедура дегазации осуществляется, пока концентрация газовоздушной среды не достигнет нормы. Резервуары с бензином должны иметь норму в 100мг/м3, масляные - 300мг/м3, аммиачные - 20мг/м3.
+        </div>
+    </div>
+
+    <div>
+        <h3>6. Ремонт ёмкостей</h3>
+        <div>
+            Стальные резервуары, эксплуатируемые в течение длительного периода времени, нуждаются в проведении систематического контроля их состояния и организации плановых ремонтных работ, согласно правилам безопасности и отраслевым нормам. Каждое предприятие сталкивается с необходимостью ремонта резервуаров, т.к. они подвергаются износу, коррозии, которые снижают надежность их конструкций.
+
+            ООО «ЛюксОйл-СервисБрянск» восстанавливает, выполняет средний и капитальный ремонт вертикальных, горизонтальных, подземных резервуаров,  РВС, емкостей для нефтепродуктов, мазутов, резервуарных парков, резервуарного оборудования и трубопроводов любой сложности.
+            
+            Необходимость ремонта выявляется после проведенного нами технического диагностирования различными методами. Чаще всего возникают дефекты на первом поясе стенки стального резервуара, дефекты сварных швов, нарушения формы стенки и днища РВС. А так же мы устраняем следующие дефекты:
+            <ul>
+                <li>неравномерная осадка резервуара;</li>
+                <li>отклонения от вертикали, превышающие допустимые нормы;</li>
+                <li>дефекты сварных швов;</li>
+                <li>угловатость монтажных швов;</li>
+                <li>хлопуны на днище;</li>
+                <li>выпучины, вмятины и хлопуны на стенке;</li>
+                <li>вырывы металла;</li>
+                <li>коррозионные первого пояса стенки, полотнища днища и утора<br>повреждения окрайков от коррозии.</li>
+            </ul>  
+            Служба нашей технической поддержки готова проконсультировать Вас в любое удобное время. Ни одно обращение, будь то крупная компания или частное лицо, не останется без внимания.
+        </div>
+    </div>
+
+    <div>
+        <h3>Готовы выполнить следующие виды работ:</h3>
+
+        <div>
+            <ul>
+                <li>сервисное и техническое обслуживание ТРК;</li>
+                <li>ремонт агрегатов ТРК;</li>
+                <li>монтажные работы по замене ТРК, электрооборудования, ремонт трубопроводов;</li>
+                <li>установка и наладка систем управления АЗС;</li>
+                <li>изготовление технологических элементов резервуарного парка (раздаточные, дыхательные, сливные трубопроводы) с использованием отечественных и импортных комплектующих;</li>
+                <li>изготовление перекачивающих установок на базе насосов СЦЛ, СВН;</li>
+            </ul>
+          ООО "ЛюксОйл-СервисБрянск" имеет сервисный центр, оснащенный всем необходимым оборудованием и инструментом для проведения диагностических и ремонтных мероприятий топливораздаточного оборудования и предлагает своим клиентам качественное и своевременное                        техническое обслуживание автозаправочных станций, а так же услуги по ремонту и наладке технических средств.
+          
+          Аттестованные специалисты сервисного центра имеют большой опыт и высокую квалификацию, позволяющие оперативно решать самые сложные и нестандартные ситуации как на выезде, так и в условиях стационарной мастерской сервисного центра.
+          На складе сервисного центра всегда в наличии большой ассортимент запасных частей для различных ТРК.
+          
+          Сервисное или техническое обслуживание необходимо в процессе эксплуатации объектов с целью обеспечения требуемой работоспособности АЗС. Правильно организованное обслуживание позволяет снизить эксплуатационные расходы и способствует увеличению ресурса технического          объекта, т.е. АЗС.
+          
+          В сервисное обслуживание входит:
+          <ul>
+            <li>Контрольно-регулировочные работы;</li>
+            <li>Проверка технического состояния приборов, узлов, агрегатов;</li>
+            <li>Устранение мелких неисправностей;</li>
+            <li>Предупредительная замена изношенных деталей;</li>
+            <li>Профилактические и регламентные работы;</li>
+            <li>Замена фильтров;</li>
+            <li>Тарировка измерителей объема;</li>
+          </ul>
+          Сервисный Центр всегда готов оказать квалифицированную помощь и решить любые технические проблемы с Вашим оборудованием.
+        </div>
+    </div>
+
+    <div>
+        <div>Для вызова специалиста Вам необходимо отправить Заявку по телефону <a href="tel:62-04-04">62-04-04</a> доб. 102 или оставить сообщение о неисправности на e-mail: <a href="mailto:info@luxoil32.ru">info@luxoil32.ru</a> и мы своевременно откликнемся на Ваше сообщение. Возможны как разовые работы, так и заключение договора на сервисное         обслуживание. Гарантия на все виды работ.</div>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <div class="footerMainMenu">
+            <a href="index.html" class="mainPageBottom">
+                <div>Главная</div>
+            </a>
+            
+            <a href="https://shop.luxoil32.ru/">
+                <div>Магазин</div>
+            </a>
+    
+            <a href="index/production.html">
+                <div>Производство</div>
+            </a>
+            
+            <a href="">
+                <div>Галерея работ</div>
+            </a>
+            
+            <a href="">
+                <div>Сертификаты</div>
+            </a>
+            
+            <a href="">
+                <div class="contact">Контакты</div>
+            </a>
+        </div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

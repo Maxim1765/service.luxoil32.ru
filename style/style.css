@@ -1,0 +1,504 @@
+* {
+    font-family: doloman pavljenko light;
+    /* width: 100%; */
+}
+
+/* body {
+    width: 100vw;
+} */
+
+/* .rootBoxScroll {
+    width: 100%!important;
+} */
+
+header {
+    z-index: 1002;
+}
+
+.preload__scene {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    overflow: hidden;
+}
+
+.preloader__block {
+    width: 50%;
+    background-color: red;
+    
+    animation: leftBlock 1s linear forwards;
+    animation-delay: 2s;
+}
+
+.preloader__block:last-child {
+    
+    animation: rightBlock 1s linear forwards;
+    animation-delay: 2s;
+}
+
+.loading__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1001;
+    animation: loading .4s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes loading {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 270px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-color: #666666;
+    border-radius: 4px;
+    animation: progressLine 2s ease forwards;
+}
+
+@keyframes progressLine {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: calc(100% - 4px);
+    }
+    
+}
+
+@keyframes leftBlock {
+    0% {
+        transform: translateX(0) scale(1) rotate(0);
+    }
+
+    50% {
+        transform: translateX(0) scale(.9) rotate(10deg);
+    }
+
+    100% {
+        transform: translateX(-110%) scale(.9) rotate(10deg);
+    }
+    
+}
+
+@keyframes rightBlock {
+    0% {
+        transform: translateX(0) scale(1) rotate(0);
+    }
+
+    50% {
+        transform: translateX(0) scale(.9) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateX(110%) scale(.9) rotate(-10deg);
+    }
+    
+}
+
+#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+.pageLoading img{
+    width: 300px;
+}
+
+header {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__info {
+    width: 100%;
+    background-color: red;
+}
+
+.telephone {
+    display: inline-block;
+}
+
+.telephoneImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block__telephone {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block__telephone a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a img {
+    max-width: 536px;
+    width: 28vw;
+    min-width: 250px;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 11px;
+}
+
+.email {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emailImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emailImg img {
+    width: 27px;
+}
+
+.mail {
+    display: inline-block;
+}
+
+.tel {
+    font-size: 22px;
+}
+
+.mail {
+    color: #fff;
+    font-size: 24px
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu {
+    font-size: 27px;
+    color: red;
+    display: inline-block;
+    height: 142px;
+    line-height: 142px;
+}
+
+.mainMenu a {
+    text-decoration: none;
+}
+
+.mainMenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.servicesPage span svg{
+    background-color: red;
+}
+
+/* слайдер */
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.elewey {
+    margin: 0 auto;
+}
+
+.slideTopText {
+    display: inline-block;
+    font-size: 63px;
+    /* border: 1px solid red; */
+    padding: 6px 15px;
+    /* border-radius: 99px; */
+    background-color: #fff;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.slideBottomText {
+    display: inline-block;
+    font-size: 28px;
+    /* border: 1px solid red; */
+    /* border-radius: 99px; */
+    padding: 6px 15px;
+    background-color: #fff;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.rootTextBox {
+    display: flex!important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.moreDetailed {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 6px 15px;
+    /* border-radius: 99px; */
+    color: #fff;
+    margin-bottom: 140px;
+    font-size: 32px;
+}
+
+.mainDivSlider {
+    width: 85%;
+    height: 594px;
+    margin: 0 auto;
+}
+
+.whyChooseUs {
+    border: 1px solid red;
+    margin-top: 130px;
+    background-color: red;
+    margin-bottom: 77px;
+}
+
+.seoHeader {
+    margin-top: 95px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.whyChooseUs div h1 {
+    font-size: 43px;
+}
+
+.pass {
+    border: 1px solid #fff;
+    width: 71%;
+    margin: 0 auto;
+}
+
+.textTitle h2 {
+    font-size: 43px;
+    color: #fff;
+}
+
+.textTitle {
+    margin-top: 69px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.textWhyChooseUs {
+    font-size: 37px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 69px;
+}
+
+.cooperationWithUsAllows div img {
+    max-height: 403px;
+    max-width: 627px;
+}
+
+.cooperationWithUsAllows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cooperationWithUsAllows div {
+    display: inline-block;
+}
+
+.cooperationWithUsAllows div:nth-child(1) img {
+    max-width: 627px;
+    width: 32vw;
+    min-width: 290px;
+}
+
+.cooperationWithUsAllows div:nth-child(2) img {
+   max-width: 280px;
+   width: 15vw;
+   min-width: 125px;
+}
+
+.cooperationWithUsAllows div:nth-child(3) img {
+    max-width: 588px;
+    width: 30vw;
+    min-width: 290px;
+}
+
+.cooperationWithUsAllows {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.cooperationWithUsAllowsText {
+    font-size: 41px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cooperationWithUsAllowsMainText {
+    font-size: 33px;
+    text-align: center;
+}
+
+.cooperationWithUsAllowsMainText div {
+    display: inline-block;
+    text-align: left;
+}
+
+.theyTrustUs {
+    font-size: 47px;
+    color: red;
+    font-weight:bold;
+    text-align: center;
+}
+
+.theyTrustUs span {
+    border-bottom: 2px solid red;
+}
+
+.theyTrustUsPhoto img:nth-child(1) {
+    max-width: 173px!important;
+    width: 9vw!important;
+    min-width: 100px!important;
+}
+
+.theyTrustUsPhoto img {
+    height: 90%;
+    width: 9vw;
+    min-width: 100px;
+}
+
+.theyTrustUsPhoto {
+
+    margin: 65px 65px 134px 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerMainMenu a div {
+    display: inline-block;
+    font-size: 27px;
+    height: 110px;
+    line-height: 110px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footerMainMenu {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+/* .footerMainMenu a div:nth-child(7) {
+    margin-right: 140px;
+} */
+
+.servicesPage a {
+    font-size: 27px;
+    background-color: #fff;
+    color: red;
+    border: none;
+}
+
+.dropdown-menu a:nth-child(1) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(2) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(3) {
+    line-height: 40px;
+}
+
+.dropdown-menu a:nth-child(4) {
+    line-height: 27px;
+}
+
+.dropdown-menu a:nth-child(5) {
+    line-height: 40px;
+}
+
+
+
